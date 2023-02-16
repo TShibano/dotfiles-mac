@@ -1,0 +1,24 @@
+# .gitignore
+# ホワイトリスト形式にする
+/*
+/.**
+
+# global
+!/README.md
+!/.gitignore
+
+# config
+!/.config/
+!/.config/**
+
+# zsh
+!/.zshrc
+
+# tmux
+!/.tmux.conf
+
+# nvim
+!/.config/nvim/coc-settings.json
+!/.config/nvim/init.vim
+!/.config/nvim/colors/*
+
