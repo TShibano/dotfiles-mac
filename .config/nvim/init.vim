@@ -49,6 +49,7 @@ call g:plug#end()
 " 行を表示
 set number
 set ruler
+set cursorline
 " シンタックスオン
 syntax enable
 " インデントはスマートインデント
