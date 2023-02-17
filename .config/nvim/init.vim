@@ -49,7 +49,6 @@ call g:plug#end()
 " 行を表示
 set number
 set ruler
-set cursorline
 " シンタックスオン
 syntax enable
 " インデントはスマートインデント
@@ -136,6 +135,10 @@ highlight Normal ctermbg=NONE guibg=NONE
 highlight NonText ctermbg=NONE guibg=NONE
 highlight SpecialKey ctermbg=NONE guibg=NONE
 highlight EndOfBuffer ctermbg=NONE guibg=NONE
+set cursorline
+highlight CursorLine cterm=underline ctermfg=NONE ctermbg=NONE
+"highlight CursorLine cterm=underline ctermfg=Red ctermbg=Red
+"highlight CursorLine guifg=Red guibg=Red
 " let g:onedark_termcolors=256
 
 " julia
