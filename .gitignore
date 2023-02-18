@@ -17,6 +17,13 @@
 # tmux
 !/.tmux.conf
 
+# vim
+!/.vim/
+!/.vim/Ultisnips/
+!/.vim/Ultisnips/*
+!/.vim/colors
+!/.vim/colors/*
+
 # nvim
 !/.config/nvim/coc-settings.json
 !/.config/nvim/init.vim
