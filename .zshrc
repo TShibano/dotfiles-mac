@@ -1,8 +1,8 @@
+# zshでvim modewp使う
+bindkey -v
+bindkey "jj" vi-cmd-mode
+
 #### alias 
-alias pwb='pwd | pbcopy'
-
-
-
 #### alias application ### Mac application
 alias memo='open -a /Applications/memo.app'
 alias safari='open -a /Applications/Safari.app'
@@ -24,36 +24,17 @@ alias aldocker='open -a /Applications/Docker.app'
 alias slack='open -a /Applications/Slack.app'
 alias routine='r1 && slack && aldocker'
 
-### routine open
-alias lab='safari && reminder && mail && calender && music && google && line'
-
-### Microsoft
-alias word='open -a /Applications/"Microsoft Word.app"'
-alias excel='open -a /Applications/"Microsoft Excel.app"'
-alias powerpoint='open -a /Applications/"Microsoft PowerPoint.app"'
-alias skype='open -a /Applications/Skype.app'
-alias VScode='open -a /Applications/"Visual Studio Code.app"'
-
 
 ### programing
 alias rstudio='open -a /Applications/Rstudio.app'
-alias PyCharm='open -a /Applications/"PyCharm CE.app"'
-alias JetBrains='open -a /Applications/"JetBrains Toolbox.app"'
 
 ### terminal IDE
-alias ide='cdcomp && zsh ~/.scripts/ide.sh'
-alias tmuxide='tmux new-session \; source-file ~/.scripts/new_session'
+#alias ide='zsh ~/.scripts/ide.sh'
+alias tmuxide='tmux new -s $1 \; source-file ~/.scripts/new_session'
 
-## routine wark
-alias univ='google && reminder && safari && mail && line && calender &&fantastical && music'
-
-alias morning='safari && line'
-alias work='mail && calender && reminder'
 
 # alias change directory
-alias cdhelp='cd ~/Documents/help'
 alias cddata='cd ~/Data_Analysis/DataAnalysis'
-alias cdcomp='cd ~/competitive-programming/AtCoder/julia'
 
 export PS1="%~ $ "
 
@@ -88,7 +69,7 @@ export INFOPATH=/usr/local/texlive/2020/texmf-dist/doc/info:$INFOPATH
 eval "$(starship init zsh)"
 
 # gitの補完 ====
-# brew 　の場合
+# brew の場合
 fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
 #
 # 補完機能有効にする
