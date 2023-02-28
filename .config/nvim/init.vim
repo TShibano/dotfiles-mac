@@ -129,7 +129,7 @@ nmap <F5> :Exe
 " colorscheme
 set t_Co=256
 set background=dark
-colorscheme Papercolor
+colorscheme PaperColor
 " 背景を透明にする
 highlight Normal ctermbg=NONE guibg=NONE
 highlight NonText ctermbg=NONE guibg=NONE
